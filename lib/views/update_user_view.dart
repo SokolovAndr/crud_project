@@ -47,7 +47,7 @@ class _UpdateUserViewState extends State<UpdateUserView> {
             height: 15,
           ),
           ElevatedButton(
-            onPressed: () async {
+            onPressed: () async{
               if (_userNameCtrl.text.isEmpty) {
                 snackBar(context, "User name cant be null");
               } else {
