@@ -81,7 +81,7 @@ class _HomeViewState extends State<HomeView> {
                 leading: Text(userModel.data[index].id.toString()),
                 title: Text(userModel.data[index].name),
                 trailing: IconButton(
-                  onPressed: () async{
+                  onPressed: () async  {
                     context.read<LogicalService>().add(DeleteUserEvent(
                         id: userModel.data[index].id.toString()));
                     context.read<LogicalService>().add(ReadUserEvent());
